@@ -1,0 +1,65 @@
+.section {
+  width: 100%;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.secondary_heading {
+  font-size: 3rem;
+}
+
+.secondary_heading {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--body-color);
+}
+
+.card {
+  padding: 2.4rem 1.6rem;
+  background-color: var(--card-bg-color);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1.6rem;
+}
+
+.label {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.input {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  grid-column: 1/-1;
+}
+
+.buttons button {
+  padding: 0.6rem 0.9rem;
+  color: var(--bookroom-form-button-text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bookroom-form-button-bg-color);
+  border: 3px solid transparent;
+}
+
+.buttons button:hover {
+  transition: all 0.3s;
+  background-color: var(--bookroom-form-button-text-color);
+  color: var(--bookroom-form-button-bg-color);
+  border: 3px solid var(--bookroom-form-button-bg-color);
+}

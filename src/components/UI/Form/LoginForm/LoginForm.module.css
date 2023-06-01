@@ -1,0 +1,59 @@
+.form {
+  width: 40%;
+  background-color: var(--card-bg-color);
+  padding: 3rem 2.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.4rem 3.2rem;
+  border-radius: 9px;
+  align-items: center;
+}
+
+.secondary_heading {
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 3px;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.secondary_heading span {
+  border-bottom: 2px solid var(--body-color);
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+}
+
+.buttons button {
+  padding: 0.6rem 0.9rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  color: var(--bookroom-form-button-text-color);
+  background-color: var(--bookroom-form-button-bg-color);
+  border: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.buttons button:hover {
+  background-color: var(--bookroom-form-button-text-color);
+  color: var(--bookroom-form-button-bg-color);
+  border: 3px solid var(--bookroom-form-button-bg-color);
+}

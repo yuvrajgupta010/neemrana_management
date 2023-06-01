@@ -1,0 +1,68 @@
+.section {
+  width: 100%;
+  justify-self: stretch;
+  align-self: stretch;
+  padding: 2.4rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.secondary_heading span {
+  font-size: 3rem;
+}
+
+.secondary_heading span {
+  padding-bottom: 3px;
+  border-bottom: 3px solid var(--body-color);
+}
+
+.secondary_heading {
+  font-size: 2.4rem;
+}
+
+.card {
+  width: 50%;
+  padding: 2.4rem 1.6rem;
+  background-color: var(--card-bg-color);
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.6rem;
+}
+
+.tertiary_heading {
+  font-size: 1.6rem;
+}
+
+.p {
+  font-size: 1.6rem;
+  justify-self: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  grid-column: 1/-1;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  padding: 0.6rem 0.9rem;
+  color: var(--bookroom-form-button-text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bookroom-form-button-bg-color);
+  border: 3px solid transparent;
+}
+
+.buttons button:hover {
+  transition: all 0.3s;
+  background-color: var(--bookroom-form-button-text-color);
+  color: var(--bookroom-form-button-bg-color);
+  border: 3px solid var(--bookroom-form-button-bg-color);
+}

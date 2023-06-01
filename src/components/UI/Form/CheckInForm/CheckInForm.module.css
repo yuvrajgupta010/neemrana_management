@@ -1,0 +1,120 @@
+.form {
+  padding: 2.4rem 3rem;
+  background-color: var(--card-bg-color);
+  border-radius: 1rem;
+  margin-bottom: 10rem;
+}
+
+.form_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.tertiary_heading {
+  grid-column: 1/-1;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.p span:first-child {
+  font-weight: 600;
+}
+
+.form_guests {
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.input_form {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.input_field {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  grid-column: 1/-1;
+}
+
+.buttons button {
+  padding: 0.3rem 0.6rem;
+  color: var(--bookroom-form-button-text-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bookroom-form-button-bg-color);
+  border: 3px solid transparent;
+}
+
+.buttons button:hover {
+  transition: all 0.3s;
+  background-color: var(--bookroom-form-button-text-color);
+  color: var(--bookroom-form-button-bg-color);
+  border: 3px solid var(--bookroom-form-button-bg-color);
+}
+
+.buttons button:disabled {
+  cursor: not-allowed;
+}
+
+.form_paymentMode {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.buttons_form {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+}
+
+.buttons_form button {
+  padding: 0.6rem 0.9rem;
+  color: var(--bookroom-form-button-text-color);
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bookroom-form-button-bg-color);
+  border: 3px solid transparent;
+}
+
+.buttons_form button:hover {
+  transition: all 0.3s;
+  background-color: var(--bookroom-form-button-text-color);
+  color: var(--bookroom-form-button-bg-color);
+  border: 3px solid var(--bookroom-form-button-bg-color);
+}

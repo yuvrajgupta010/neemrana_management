@@ -1,0 +1,24 @@
+.section {
+  padding: 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background-color: var(--error-button-bg-color);
+  color: var(--error-text-color);
+  border: 3px solid var(--error-button-bg-color);
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.button:hover {
+  transition: all 0.3s;
+  background-color: var(--error-text-color);
+  color: var(--error-button-bg-color);
+}
