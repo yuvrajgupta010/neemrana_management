@@ -137,3 +137,8 @@
   color: var(--bookroom-form-button-bg-color);
   border: 3px solid var(--bookroom-form-button-bg-color);
 }
+
+.divBox {
+  align-self: stretch;
+  justify-self: stretch;
+}

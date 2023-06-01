@@ -33,7 +33,7 @@ const RoomList = (props) => {
               <span>Price :</span>
               <span>&#x20B9; {room.price}</span>
             </p>
-            <div>
+            <div className={classes.divBox}>
               <h3>
                 <span>Facility</span>
               </h3>
@@ -43,7 +43,7 @@ const RoomList = (props) => {
                 })}
               </ul>
             </div>
-            <div>
+            <div className={classes.divBox}>
               <h3>
                 <span>Included</span>
               </h3>
