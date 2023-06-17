@@ -17,12 +17,15 @@ const CustomerQuery = () => {
   useEffect(() => {
     if (isLoggedIn) {
       setIsLoading(true);
-      fetch("http://localhost:4000/management/customer-query", {
-        method: "GET",
-        headers: {
-          Authorization: token,
-        },
-      })
+      fetch(
+        "https://neemrana-hotel-api.onrender.com/management/customer-query",
+        {
+          method: "GET",
+          headers: {
+            Authorization: token,
+          },
+        }
+      )
         .then((res) => {
           return res.json();
         })
@@ -37,7 +40,7 @@ const CustomerQuery = () => {
   }, [token, isLoggedIn]);
 
   const clearQueryHandler = (queryId) => {
-    fetch("http://localhost:4000/management/customer-query", {
+    fetch("https://neemrana-hotel-api.onrender.com/management/customer-query", {
       method: "DELETE",
       body: JSON.stringify({ queryId: queryId }),
       headers: {

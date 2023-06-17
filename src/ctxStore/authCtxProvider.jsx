@@ -16,7 +16,7 @@ const AuthCtxProvider = (props) => {
   useEffect(() => {
     const storedToken = localStorage.getItem("token");
     if (storedToken !== null) {
-      fetch("http://localhost:4000/management/get-data", {
+      fetch("https://neemrana-hotel-api.onrender.com/management/get-data", {
         method: "GET",
         headers: {
           Authorization: storedToken,

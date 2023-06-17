@@ -40,7 +40,7 @@ const CreateUser = (props) => {
     const isAdmin = accountType === "admin";
 
     setStatusMessage("Loading...", false);
-    fetch("http://localhost:4000/management/create-user", {
+    fetch("https://neemrana-hotel-api.onrender.com/management/create-user", {
       method: "POST",
       body: JSON.stringify({
         isAdmin,

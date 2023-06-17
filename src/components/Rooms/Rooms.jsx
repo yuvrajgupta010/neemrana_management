@@ -19,7 +19,7 @@ const Rooms = (props) => {
 
   useEffect(() => {
     if (isLoggedIn) {
-      fetch("http://localhost:4000/management/room", {
+      fetch("https://neemrana-hotel-api.onrender.com/management/room", {
         method: "GET",
         headers: {
           Authorization: token,
@@ -52,7 +52,7 @@ const Rooms = (props) => {
       });
       const front = allRoom.slice(0, roomData[0].arrIdx);
       const back = allRoom.slice(roomData[0].arrIdx + 1);
-      fetch("http://localhost:4000/management/room", {
+      fetch("https://neemrana-hotel-api.onrender.com/management/room", {
         method: "PUT",
         body: JSON.stringify(userData),
         headers: {
@@ -76,7 +76,7 @@ const Rooms = (props) => {
           setStatusMessage(err.message, true);
         });
     } else if (type === "newRoom") {
-      fetch("http://localhost:4000/management/room", {
+      fetch("https://neemrana-hotel-api.onrender.com/management/room", {
         method: "POST",
         body: JSON.stringify(userData),
         headers: {
@@ -111,7 +111,7 @@ const Rooms = (props) => {
       "Are you really want to delete room " + roomNo + "?"
     );
     if (isConfirm) {
-      fetch("http://localhost:4000/management/room", {
+      fetch("https://neemrana-hotel-api.onrender.com/management/room", {
         method: "DELETE",
         body: JSON.stringify({ roomNo }),
         headers: {

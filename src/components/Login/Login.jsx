@@ -24,7 +24,7 @@ const Login = (props) => {
       return;
     }
 
-    fetch("http://localhost:4000/management/login", {
+    fetch("https://neemrana-hotel-api.onrender.com/management/login", {
       method: "POST",
       body: JSON.stringify({ username: data.email, password: data.password }),
       headers: {

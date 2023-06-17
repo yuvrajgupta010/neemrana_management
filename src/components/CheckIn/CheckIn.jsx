@@ -39,14 +39,17 @@ const CheckIn = (props) => {
       return;
     }
     setIsLoading(true);
-    fetch("http://localhost:4000/management/get-booking-data", {
-      method: "POST",
-      body: JSON.stringify({ bookingId: Number(bookingId) }),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: token,
-      },
-    })
+    fetch(
+      "https://neemrana-hotel-api.onrender.com/management/get-booking-data",
+      {
+        method: "POST",
+        body: JSON.stringify({ bookingId: Number(bookingId) }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: token,
+        },
+      }
+    )
       .then((res) => {
         if (!res.ok) {
           throw new Error("booking id doesn't exist!");
@@ -83,7 +86,7 @@ const CheckIn = (props) => {
       customerEmail: bookingData.customerEmail,
       price: bookingData.price,
     };
-    fetch("http://localhost:4000/management/check-in", {
+    fetch("https://neemrana-hotel-api.onrender.com/management/check-in", {
       method: "POST",
       body: JSON.stringify(preparedData),
       headers: {

@@ -41,14 +41,17 @@ const CheckOut = (props) => {
   const submitBookingId = () => {
     if (bookingId.trim().length > 0) {
       setIsLoading(true);
-      fetch("http://localhost:4000/management/get-booking-data", {
-        method: "POST",
-        body: JSON.stringify({ bookingId: Number(bookingId) }),
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: token,
-        },
-      })
+      fetch(
+        "https://neemrana-hotel-api.onrender.com/management/get-booking-data",
+        {
+          method: "POST",
+          body: JSON.stringify({ bookingId: Number(bookingId) }),
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: token,
+          },
+        }
+      )
         .then((res) => {
           if (!res.ok) {
             throw new Error("booking id doesn't exist!");
